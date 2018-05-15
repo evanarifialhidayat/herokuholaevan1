@@ -59,12 +59,14 @@
                             <goal>copy</goal>
                         </goals>
                         <configuration>
+                            <outputDirectory>${endorsed.dir}</outputDirectory>
+                            <silent>true</silent>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>com.github.evanarifialhidayat</groupId>
-                                    <artifactId>webapp-runner</artifactId>
-                                    <version>8.0.30.2</version>
-                                    <destFileName>webapp-runner.jar</destFileName>
+                                    <groupId>javax</groupId>
+                                    <artifactId>javaee-endorsed-api</artifactId>
+                                    <version>6.0</version>
+                                    <type>jar</type>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
